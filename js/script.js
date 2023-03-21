@@ -13,14 +13,8 @@ window.addEventListener("scroll", () => {
   // header Drop down
   if (window.scrollY > 20) {
     nav.classList.add("nav-drop-shadow");
-    // if (width > 768) {
-    //   nav.style.paddingTop = "0";
-    // }
   } else {
     nav.classList.remove("nav-drop-shadow");
-    // if (width > 768) {
-    //   nav.style.paddingTop = "0.5rem";
-    // }
   }
 });
 
@@ -36,9 +30,10 @@ const submenu = (ele) => {
 
 // Change language
 let width = document.body.clientWidth;
-if (width < 768) {
+if (width > 768) {
   const options = [...document.querySelectorAll("option")];
-  const lang = ["sw", "de", "en"];
+  // const lang = ["sw", "de", "en"];
+  const lang = ["Swahili (sw)", "German (de)", "English (en)"];
   options.map((option, index) => {
     option.innerText = lang[index];
   });
