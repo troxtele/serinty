@@ -109,7 +109,6 @@ img {
   width: 100%;
 }
 
-main,
 section {
   position: relative;
   padding: 1.5rem 0;
@@ -427,9 +426,9 @@ header {
   opacity: 1 !important;
 }
 /*---------------------------------------------------- 
-Main Section
+Hero Section
 ----------------------------------------------------*/
-main {
+.hero {
   margin-top: 4rem;
   .wrapper {
     display: flex;
@@ -506,7 +505,6 @@ Welcome Section
   h4 {
     font-size: 1.6rem;
     font-weight: 600;
-    margin-bottom: 1rem;
   }
   h3 {
     font-size: 2rem;
@@ -648,7 +646,7 @@ footer {
   }
 }
 @media (min-width: 640px) {
-  main {
+  .hero {
     h1 {
       font-size: 2.2rem;
     }
@@ -696,16 +694,14 @@ footer {
       }
     }
   }
-  main,
   section {
     padding: 4rem 0;
   }
 
-  main,
   section {
     padding: 2rem 0;
   }
-  main {
+  .hero {
     .wrapper {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -726,7 +722,6 @@ footer {
     h4 {
       font-size: 1.6rem;
       font-weight: 600;
-      margin-bottom: 1.5rem;
     }
     h3 {
       font-size: 2.2rem;
@@ -768,7 +763,7 @@ footer {
   .hamburger {
     display: none;
   }
-  main {
+  .hero {
     h1 {
       font-size: 3.5rem;
     }
@@ -781,7 +776,6 @@ footer {
     }
   }
 
-  main,
   section {
     padding: 2.5rem 0;
   }

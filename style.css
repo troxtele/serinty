@@ -96,7 +96,6 @@ img {
   width: 100%;
 }
 
-main,
 section {
   position: relative;
   padding: 1.5rem 0;
@@ -406,23 +405,23 @@ header {
 }
 
 /*---------------------------------------------------- 
-Main Section
+Hero Section
 ----------------------------------------------------*/
-main {
+.hero {
   margin-top: 4rem;
 }
-main .wrapper {
+.hero .wrapper {
   display: flex;
   flex-flow: column-reverse;
   gap: 3.5rem;
 }
-main h1 {
+.hero h1 {
   font-size: 1.5rem;
   letter-spacing: -0.02em;
   font-weight: bold;
   text-align: center;
 }
-main img {
+.hero img {
   max-width: 20rem;
 }
 
@@ -478,7 +477,6 @@ Welcome Section
 .pagecontent h4 {
   font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: 1rem;
 }
 .pagecontent h3 {
   font-size: 2rem;
@@ -601,7 +599,7 @@ footer .copyright span {
   }
 }
 @media (min-width: 640px) {
-  main h1 {
+  .hero h1 {
     font-size: 2.2rem;
   }
   .preview .items {
@@ -641,23 +639,21 @@ footer .copyright span {
     font-size: 0.8rem;
     color: var(--dark-green);
   }
-  main,
   section {
     padding: 4rem 0;
   }
-  main,
   section {
     padding: 2rem 0;
   }
-  main .wrapper {
+  .hero .wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  main h1 {
+  .hero h1 {
     font-size: 3rem;
     text-align: start;
   }
-  main img {
+  .hero img {
     max-width: 25rem;
   }
   .pagecontent .wrapper.grid {
@@ -666,7 +662,6 @@ footer .copyright span {
   .pagecontent h4 {
     font-size: 1.6rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
   }
   .pagecontent h3 {
     font-size: 2.2rem;
@@ -699,14 +694,13 @@ footer .copyright span {
   .hamburger {
     display: none;
   }
-  main h1 {
+  .hero h1 {
     font-size: 3.5rem;
   }
   .preview .items {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 4rem;
   }
-  main,
   section {
     padding: 2.5rem 0;
   }
