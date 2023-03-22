@@ -8,7 +8,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="/images/serinty.png"
+      href="./images/favicon.png"
       sizes="16x16"
     />
     <link rel="stylesheet" href="./style.css" />
@@ -216,9 +216,7 @@
               <!-- Language -->
               <div class="languages">
                 <select class="lang" onchange="window.location.href=this.value">
-                  <option value="sw.html" selected="selected">
-                    sw
-                  </option>
+                  <option value="sw.html" selected="selected">sw</option>
                   <option value="de.html">de</option>
                   <option value="index.html">en</option>
                 </select>
@@ -799,7 +797,7 @@
     <!-- Footer section -->
     <footer>
       <div class="container">
-        <div class="wrapper">
+        <div class="wrapper grid">
           <!-- footer -->
           <ul class="footer-links grid">
             <li>
@@ -948,12 +946,17 @@
               </ul>
             </li>
           </ul>
+          <!-- Copyright -->
+          <div class="copyright flex justify-center align-center">
+            <span
+              >© 2022 - <span id="year">current year</span> Serinty Ltd.</span
+            >
+          </div>
         </div>
       </div>
     </footer>
     <!-- Scripts -->
     <script src="./js/db.js"></script>
     <script src="./js/script.js"></script>
-    `
   </body>
 </html>

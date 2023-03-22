@@ -70,6 +70,13 @@ body {
 
   footer {
     background-color: #072b22;
+
+    // Copyright
+    .copyright {
+      span {
+        color: #92b861;
+      }
+    }
   }
 }
 
@@ -515,9 +522,13 @@ Welcome Section
 Footer Section
 ----------------------------------------------------*/
 footer {
-  padding: 3rem 0;
+  padding-top: 3rem;
   background-color: rgb(255, 243, 196);
   transition: background 0.3s ease-in-out;
+
+  .wrapper {
+    gap: 2rem;
+  }
   .parent-link {
     font-size: 1.6rem;
   }
@@ -572,6 +583,17 @@ footer {
 
   .phone {
     transition: 0.3s ease-in-out;
+  }
+
+  // Copyright
+  .copyright {
+    border-top: 1px solid #1a7c4146;
+    padding: 1rem 0;
+    span {
+      transition: color 0.3s ease-in-out;
+      color: #6b8b3f;
+      font-size: 0.85rem;
+    }
   }
 }
 

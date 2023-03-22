@@ -21,12 +21,16 @@ window.addEventListener("scroll", () => {
 // Toggle Submenu
 const submenu = (ele) => {
   const parent = ele.parentElement.parentElement;
-  console.log(parent);
   const svg = parent.querySelector(".arrow-svg");
   const submenu = parent.querySelector(".submenu");
   submenu.classList.toggle("toggle-height");
   svg.classList.toggle("rotate-svg");
 };
+
+// Get year
+const d = new Date();
+let year = d.getFullYear();
+document.querySelector("#year").innerHTML = year;
 
 // Change language
 let width = document.body.clientWidth;
